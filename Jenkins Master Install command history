@@ -1,0 +1,21 @@
+     1  sudo yum install java-1.8.0-openjdk-devel
+     2  sudo yum install git
+     3  sudo -i
+
+    1  yum install jenkins
+    2  cd ~
+    3  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    4  yum install wget
+    5  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    6  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    7  yum install jenkins
+    8  sudo systemctl start jenkins.service
+    9  sudo systemctl enable jenkins.service
+   10  sudo systemctl enable jenkins
+   11  chkconfig jenkins on
+   12  service jenkins start
+   13  service jenkins status
+   16  sudo yum -y install net-tools
+   17  netstat -tulpn |grep LISTEN
+ 22  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
